@@ -50,6 +50,7 @@ header .nav_links li a:hover {
   justify-content: center;
   align-items: flex-end;
   height: 10%;
+  margin-top: 20px;
 }
 .footer .social_links {
   padding: 10px;
@@ -154,4 +155,25 @@ header .nav_links li a:hover {
   width: 50%;
   height: auto;
   border: solid black 3px;
+}
+
+.blog_post_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.blog_post_page .blog_image {
+  margin-top: 20px;
+  border: solid black 3px;
+}
+.blog_post_page h2 {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.blog_post_page p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

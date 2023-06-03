@@ -1,0 +1,30 @@
+.blogs {
+    h2 {
+      text-align: center;
+      margin:20px;
+    }
+  
+    .blog_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .blog_posts {
+        width:45%;
+        text-align: center;
+        margin: 10px;
+        text-decoration: underline;
+
+        h3 {
+          margin:10px;
+        }
+  
+        img {
+          width: 50%;
+          height: auto;
+          border:solid black 3px; 
+        }
+      }
+    }
+  }
+  

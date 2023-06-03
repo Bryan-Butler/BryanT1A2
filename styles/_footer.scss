@@ -1,0 +1,24 @@
+.footer {
+    background-color: #24252A;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10%; 
+  
+    .social_links {
+      padding: 10px;  
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 33%; 
+  
+      a {
+        .social_links_img {
+          width: 60px;
+          height: 60px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+
+header {
+  background-color: #24252A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .signaturelogo {
+  width: 490px;
+  height: 90px;
+}
+header .nav_links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+header .nav_links li {
+  margin-right: 50px;
+}
+header .nav_links li a {
+  color: rgb(250, 225, 0);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+header .nav_links li a:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  background-color: #24252A;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 10%;
+}
+.footer .social_links {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 33%;
+}
+.footer .social_links a .social_links_img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.intro_section {
+  display: flex;
+  flex-direction: row;
+}
+.intro_section .intro_section_info {
+  padding: 10%;
+  text-align: center;
+}
+.intro_section .selfieimg {
+  width: 20%;
+  height: 30%;
+  margin: 20px;
+  border: 3px solid black;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+.attributes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.attributes .attributes_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.attributes .attributes_info .attribute_info_img {
+  width: 40px;
+  height: 40px;
+}
+
+.employment_history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employment_history .employment_history_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.employment_history .employment_history_container .employment_info {
+  max-width: 35%;
+  margin: 50px;
+}
+.employment_history .employment_history_container .employment_info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employment_history .employment_history_container .employment_info h3 a {
+  color: #000;
+}
+.employment_history .employment_history_container .employment_info h3 a:visited {
+  color: #000;
+}
+
+.resume_download_button {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=main.css.map */

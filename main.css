@@ -41,6 +41,21 @@ header .nav_links li a {
 header .nav_links li a:hover {
   transform: scale(1.2);
 }
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .nav_links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  header .nav_links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
 
 .footer {
   background-color: #24252A;
@@ -48,7 +63,7 @@ header .nav_links li a:hover {
   justify-content: center;
   align-items: flex-end;
   height: 10%;
-  margin-top: 20px;
+  margin-top: 10%;
 }
 .footer .social_links {
   padding: 10px;
@@ -67,11 +82,13 @@ header .nav_links li a:hover {
   display: flex;
   flex-direction: row;
 }
-.intro_section .intro_section_info {
+
+.intro_section_info {
   padding: 10%;
   text-align: center;
 }
-.intro_section .selfieimg {
+
+.selfieimg {
   width: 25%;
   height: auto;
   margin: 20px;
@@ -80,25 +97,37 @@ header .nav_links li a:hover {
 
 .attributes {
   display: flex;
-  flex-direction: column;
-  padding: 100px;
+  flex-direction: row;
 }
-.attributes h2 {
+
+h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-.attributes .attributes_info {
+
+.attributes_info {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px;
 }
-.attributes .attributes_info .attribute_info_img {
+
+.attribute_info_img {
   width: 40px;
   height: 40px;
 }
 
+@media (max-width: 800px) {
+  .intro_section,
+  .attributes {
+    flex-direction: column;
+  }
+  .selfieimg {
+    align-items: center;
+    width: 90%;
+  }
+}
 .blogs h2 {
   text-align: center;
   margin: 20px;
@@ -122,6 +151,16 @@ header .nav_links li a:hover {
   height: auto;
   border: solid black 3px;
 }
+@media (max-width: 800px) {
+  .blogs .blog_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs .blog_container .blog_posts {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
 
 .blog_post_page {
   display: flex;
@@ -141,7 +180,7 @@ header .nav_links li a:hover {
   margin-top: 20px;
   font-size: 1.5rem;
   text-align: center;
-  width: 50%;
+  width: 70%;
 }
 
 .cars {
@@ -158,6 +197,21 @@ header .nav_links li a:hover {
   padding-top: 50px;
   width: 60%;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .cars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cars .car_pics {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .cars p {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 .employment_history {
@@ -188,6 +242,16 @@ header .nav_links li a:hover {
 .employment_history .employment_history_container .employment_info h3 a:visited {
   color: #000;
 }
+@media (max-width: 800px) {
+  .employment_history .employment_history_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .employment_history .employment_history_container .employment_info {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+}
 
 .resume_download_button {
   width: 40px;
@@ -205,11 +269,32 @@ header .nav_links li a:hover {
 }
 .content_page_all .contact_page_container .contact_item {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .content_page_all .contact_page_container .contact_item .contact_img {
   margin-right: 10px;
+  max-width: 100%;
 }
-.content_page_all .contact_page_container .contact_item h4, .content_page_all .contact_page_container .contact_item p {
+.content_page_all .contact_page_container .contact_item h4 {
   text-align: center;
+  padding-right: 20px;
+  margin-bottom: 5px;
+}
+.content_page_all .contact_page_container .contact_item p {
+  text-align: center;
+  padding-right: 20px;
+}
+@media (max-width: 800px) {
+  .content_page_all {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content_page_all .contact_page_container {
+    flex-wrap: wrap;
+  }
+  .content_page_all .contact_page_container .contact_item {
+    width: 30%;
+    margin: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

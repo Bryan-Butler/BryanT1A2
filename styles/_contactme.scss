@@ -1,28 +1,49 @@
 .content_page_all {
-    h2 {
-      margin-top:20px;
-      margin-bottom: 20px;
-      text-align:center;
-    }
-  
-    .contact_page_container {
-      display: flex;
-      justify-content: space-evenly;
-  
-        .contact_item {
-          display: flex;
-          align-items: center;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-  
-          .contact_img {
-            margin-right: 10px;
-          }
-  
-          h4, p {
-           text-align:center;
-          }
-        }
+  .contact_page_container {
+    display: flex;
+    justify-content: space-evenly;
+
+    .contact_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .contact_img {
+        margin-right: 10px;
+        max-width: 100%;  
+      }
+
+      h4 {
+        text-align: center;
+        padding-right: 20px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        text-align: center;
+        padding-right: 20px;
       }
     }
-    
+  }
+
   
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+
+    .contact_page_container {
+      flex-wrap: wrap;
+
+      .contact_item {
+        width: 30%;
+        margin: 10px;
+      }
+    }
+  }
+}
+

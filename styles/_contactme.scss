@@ -1,0 +1,28 @@
+.content_page_all {
+    h2 {
+      margin-top:20px;
+      margin-bottom: 20px;
+      text-align:center;
+    }
+  
+    .contact_page_container {
+      display: flex;
+      justify-content: space-evenly;
+  
+        .contact_item {
+          display: flex;
+          align-items: center;
+
+  
+          .contact_img {
+            margin-right: 10px;
+          }
+  
+          h4, p {
+           text-align:center;
+          }
+        }
+      }
+    }
+    
+  
